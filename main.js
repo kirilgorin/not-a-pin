@@ -1,5 +1,6 @@
 const ICONIZE_ID = 'obsidian-icon-folder';
 const FILE_ICON_CLASS = 'lucide-file';
+const PINNED_TAB_CLASS = 'not-a-pin-pinned-tab';
 
 module.exports = class PinnedIconSyncPlugin extends require('obsidian').Plugin {
 	onload() {
@@ -48,6 +49,11 @@ module.exports = class PinnedIconSyncPlugin extends require('obsidian').Plugin {
 	}
 
 	syncIcons() {
+		for (const leaf of this.app.workspace.getLeavesOfType('markdown')) {
+			const header = leaf.tabHeaderInnerIconEl?.closest('.workspace-tab-header');
+			if (header) header.classList.toggle(PINNED_TAB_CLASS, !!leaf.pinned);
+		}
+
 		const iconize = this.app.plugins.plugins[ICONIZE_ID];
 		const data = iconize?.getData?.();
 		const api = iconize?.api;

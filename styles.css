@@ -1,21 +1,21 @@
 /* Shrink pinned note tabs to the Iconize icon. */
-.workspace-tab-header:has(.mod-pinned) {
-	max-width: 42px !important;
-	min-width: 42px !important;
-	padding: 0 6px !important;
+.workspace-tab-header.not-a-pin-pinned-tab {
+	max-width: 42px;
+	min-width: 42px;
+	padding: 0 6px;
 }
 
-.workspace-tab-header:has(.mod-pinned) .workspace-tab-header-inner-title {
-	display: none !important;
+.workspace-tab-header.not-a-pin-pinned-tab .workspace-tab-header-inner-title {
+	display: none;
 }
 
-.workspace-tab-header:has(.mod-pinned) .workspace-tab-header-status-container {
-	display: none !important;
+.workspace-tab-header.not-a-pin-pinned-tab .workspace-tab-header-status-container {
+	display: none;
 }
 
-.workspace-tab-header:has(.mod-pinned) .workspace-tab-header-inner-icon {
-	display: flex !important;
-	margin: 0 auto !important;
+.workspace-tab-header.not-a-pin-pinned-tab .workspace-tab-header-inner-icon {
+	display: flex;
+	margin: 0 auto;
 	justify-content: center;
 	align-items: center;
 }
