@@ -1,6 +1,6 @@
 # Not a Pin
 
-Shrink pinned note tabs to icons, and keep Iconize icons visible when Obsidian rebuilds a tab header, such as after pinning or unpinning a note.
+Shrinks pinned note tabs to the icons assigned to them by Iconize. It also restores those icons whenever Obsidian rebuilds a tab header—for example, after a tab is pinned or unpinned. Requires Obsidian 1.5 or later and Iconize with “Toggle icon in tabs” enabled.
 
 ## Requirements
 
