@@ -1,8 +1,9 @@
 {
 	"id": "not-a-pin",
 	"name": "Not a Pin",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"minAppVersion": "1.5.0",
-	"description": "Shrink pinned note tabs to icons and restore their Iconize icons.",
-	"author": "Kirill Gorin"
+	"description": "Shrink pinned tabs to icons and restore their Iconize icons.",
+	"author": "Kirill Gorin",
+	"isDesktopOnly": true
 }
