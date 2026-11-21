@@ -1,0 +1,21 @@
+/* Shrink pinned note tabs to the Iconize icon. */
+.workspace-tab-header:has(.mod-pinned) {
+	max-width: 42px !important;
+	min-width: 42px !important;
+	padding: 0 6px !important;
+}
+
+.workspace-tab-header:has(.mod-pinned) .workspace-tab-header-inner-title {
+	display: none !important;
+}
+
+.workspace-tab-header:has(.mod-pinned) .workspace-tab-header-status-container {
+	display: none !important;
+}
+
+.workspace-tab-header:has(.mod-pinned) .workspace-tab-header-inner-icon {
+	display: flex !important;
+	margin: 0 auto !important;
+	justify-content: center;
+	align-items: center;
+}

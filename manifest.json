@@ -1,8 +1,8 @@
 {
 	"id": "not-a-pin",
 	"name": "Not a Pin",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"minAppVersion": "1.5.0",
-	"description": "Restores Iconize icons when Obsidian rebuilds tab headers.",
+	"description": "Shrink pinned note tabs to icons and restore their Iconize icons.",
 	"author": "Kirill Gorin"
 }
